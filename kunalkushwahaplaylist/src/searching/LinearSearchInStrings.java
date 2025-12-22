@@ -2,17 +2,22 @@ package searching;
 
 public class LinearSearchInStrings {
     public static void main(String[] args) {
-        String word = "Thahir is Learning DSA";
+        String str = "Thahir is Learning DSA";
         char target = 'L';
-        System.out.println(linearSearchINString(word, target));
+        System.out.println(linearSearchINString(str, target));
     }
 
-    private static boolean linearSearchINString(String word, char target) {
+    private static boolean linearSearchINString(String str, char target) {
 
-        if(word.isEmpty()) return false;
+        if(str.isEmpty()) return false;
 
-        for(char c : word.toCharArray()){
-            if(c == target) return true;
+//        Using for each
+//        for(char c : str.toCharArray()){
+//            if(c == target) return true;
+//        }
+
+        for(int i = 0; i < str.length(); i++){
+            if(target == str.charAt(i)) return true;
         }
 
         return false;
