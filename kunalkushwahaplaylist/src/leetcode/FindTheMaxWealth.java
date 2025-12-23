@@ -1,3 +1,5 @@
+package leetcode;
+
 public class FindTheMaxWealth {
 
     //https://leetcode.com/problems/richest-customer-wealth/
