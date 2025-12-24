@@ -19,7 +19,8 @@ public class CeilingElement {
 
             if(arr[mid] >= target){
                 ans = arr[mid];
-                high = mid - 1;
+                high  = mid - 1;
+
             }
             else{
                 high = mid - 1;
