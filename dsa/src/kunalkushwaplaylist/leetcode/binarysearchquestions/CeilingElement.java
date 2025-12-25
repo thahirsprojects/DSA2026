@@ -1,4 +1,4 @@
-package binarysearchquestions;
+package kunalkushwaplaylist.leetcode.binarysearchquestions;
 
 public class CeilingElement {
 

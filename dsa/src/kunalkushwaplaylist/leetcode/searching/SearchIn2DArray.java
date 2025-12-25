@@ -1,4 +1,4 @@
-package searching;
+package kunalkushwaplaylist.leetcode.searching;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package leetcode;
+package kunalkushwaplaylist.leetcode;
 
 public class FindTheMaxWealth {
 

@@ -1,4 +1,4 @@
-package searching;
+package kunalkushwaplaylist.leetcode.searching;
 
 public class LinearSearchInStrings {
     public static void main(String[] args) {
