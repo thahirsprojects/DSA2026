@@ -1,4 +1,4 @@
-package kunalkushwaplaylist.leetcode.binarysearchquestions;
+package kunalkushwaplaylist.binarysearchquestions;
 
 public class CeilingElement {
 
@@ -11,23 +11,18 @@ public class CeilingElement {
     private static int findCeilingElement(int[] arr, int target) {
 
         int low = 0, high = arr.length - 1;
-        int min = -1;
+        int ceiling = -1;
 
-        while(low <= high){
-            int mid = (low + high) / 2;
-            int ans = -1;
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
 
-            if(arr[mid] >= target){
-                ans = arr[mid];
-                high  = mid - 1;
-
-            }
-            else{
-                high = mid - 1;
+            if (arr[mid] >= target) {
+                ceiling = arr[mid];     // possible answer
+                high = mid - 1;         // search left for smaller ceiling
+            } else {
+                low = mid + 1;          // search right
             }
         }
-        return min;
+        return ceiling;
     }
-
-
 }
